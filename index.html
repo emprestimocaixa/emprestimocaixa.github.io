@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="https://i.imgur.com/3krSGeg.jpeg" as="image" fetchpriority="high">
+  <meta property="og:image" content="https://i.imgur.com/3krSGeg.jpeg">
+</head>
+<body>
+  <script>
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    location.href = `https://api.whatsapp.com/send?phone=${urlParams.get('number')}&text=`
+  </script>
+</body>
+</html>
